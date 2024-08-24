@@ -1,0 +1,139 @@
+Topics:
+
+  1. Frontend:
+      the module which user will interact, html, css, js
+      makes request to the some private or public APIs 
+      which will give the contents to be rendered
+
+    Database
+
+    API --> Application Programming Interface
+
+    Backend is the system where APIs will be running
+
+     Backend: REST API - Representational State Transfer
+      system which lets us communicate with Database for doing CRUD operations
+
+      Why need a backend system:
+        1. separating the Front-end layer and data layer
+        2. ease of data maniupulation and in-memory access ( which is not possible in browser )
+        3. secure querying of the data layer
+
+  2. what is nodejs:
+    
+    nodejs is a js runtime environment, where we can execute js without web browser
+
+    1. blocking i/o or synchronous operations
+    2. Non Blocking i/o or asynchronous operations
+
+    running js file in nodejs environment:
+      cannot access window functions/attributes like alert, prompt, confirm, document because they can only be used in web browser
+    
+    BrowserJS - this === window
+
+    global var --> console.log(global);
+      utils related nodejs backend
+
+    command line arguements: ( space separated word in the command line )
+      - process.argv
+        custom arguements should be taken from second index value
+      - Getting Inputs from CMD line arguements
+  
+  2.1 ES module, Common Js
+
+    Modularization and reusing the codes
+
+    exporting and importing of the codes
+
+    Common JS:
+      JS used before ES
+
+      exporting:
+
+        files end,
+
+        module.exports = {
+          // items to be exported
+          <>,
+          <>
+        }
+      
+      importing:
+
+        const name = require('<file-path>/module');
+    
+    ES Module:
+
+      exporting:
+
+        export, export default
+
+      importing:
+
+        import utils from "utils";
+        default import
+        import utils, { add, sub, mul } from "utils";
+  
+  3. inbuilt module/package as utility
+      
+      - OS - operating system
+        reading memory and system info
+
+      - fs - file system
+        create new files in the file system
+        create files using for loop
+        readFile with and without encoding
+        appendFile and appendFile with newline
+        deletefile - unlink
+
+      Timestamp or Date Formats
+        Timestamp:
+          Date.now(); // timestamp
+
+        Date Time:
+          Date().toString(); 
+          // Date format 
+          ( Sat Dec 02 2023 12:07:57 GMT+0530 (India Standard Time) )
+          new Date().toISOString(); 
+          // Date format 
+          ( 2023-12-02T06:38:44.231Z )
+
+  
+
+Next Session:
+
+  module hoisting behavior
+  4. using external third party library,
+
+    npm:
+      node package manager
+
+    in nodejs, in order to use the third party library from open source.
+
+      step 0: Create a required folder
+
+      step1: npm init ( run in the created folder )
+      
+      -> create a new node project where we can install third party packages
+
+      step 2:
+        npm install <third-party-package>
+      We need a npm project with the packages under dependency
+
+      what is npm -> node package manager ( like play store ), 
+      node_modules ( executable( moduled js )/binary of the third party packages )
+      
+      examples:
+        lodash
+
+  files using timestamp & datetime formats
+  
+  express - web framework http server applcation which lets us create APIs
+      and use those APIs in our application
+
+      sample API using express
+
+Task: 
+      
+  Download & Install - Post Man
+  Read About Post-Man
