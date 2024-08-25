@@ -24,7 +24,7 @@ Topics:
     nodejs is a js runtime environment, where we can execute js without web browser
 
     1. blocking i/o or synchronous operations
-    2. Non Blocking i/o or asynchronous operations
+    2. Non Blocking i/o or asynchronous operations ( Error First Callback to track finish the operation )
 
     running js file in nodejs environment:
       cannot access window functions/attributes like alert, prompt, confirm, document because they can only be used in web browser
